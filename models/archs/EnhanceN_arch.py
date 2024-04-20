@@ -276,10 +276,10 @@ class InvISPNet(nn.Module):
         channel_num = 16  # total channels at input stage
 
         self.color = ConditionNet()
-        self.color.load_state_dict(torch.load('D:/Github_Code/BMNet-main/BMNet-main/MainNet/pretrain/1460_G.pth'))
+        self.color.load_state_dict(torch.load('/pretrain/color_ckpt.pth'))
 
         self.edge=c_net()
-        ckpt = torch.load('D:/Github-Code/SMG-LLIE-main/SMG-LLIE-main/result/checkpointsnogan/iteration_437000.pt')
+        ckpt = torch.load('/pretrain/edge_ckpt.pt')
         self.edge.load_state_dict(ckpt['state_dict'])
 
         self.CG0R = nn.Conv2d(channel_in, channel_num, 1, 1, 0)
