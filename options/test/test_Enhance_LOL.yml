@@ -1,5 +1,5 @@
 #### general settings
-name: BMNet-SRD1
+name: ECG_INN
 use_tb_logger: true
 model: sr
 distortion: sr
@@ -12,7 +12,7 @@ datasets:
     name: MainNet
     mode: MainNet_val
 #    dataroot: /data/1760921465/dped/iphone/test_data/patches
-    filelist: D:/Github-Code/BMNet-main/MainNet/data/groups_test_lolv2.txt
+    filelist: D:/ECG_INN/data/groups_test_lolv2.txt
     batch_size: 1
     use_shuffle: false
 
@@ -25,10 +25,8 @@ network_G:
 
 #### path
 path:
-  root: D:/Github-Code/BMNet-main/MainNet
-  results_root: D:/Github-Code/BMNet-main/MainNet/LOL/lolv2nocond
-#  pretrain:  D:/Github-Code/BMNet-main/MainNet/experiments/wobackward_archived_240311-130028/models/0_bestpsnravg.pth
-#  pretrain_model_G: D:/Github-Code/BMNet-main/MainNet/experiments/wobackward_archived_240311-130028/models/0_bestpsnravg.pth
+  root: D:/ECG_INN
+  results_root: D:/ECG_INN/LOL/lolv2nocond   # your result path
 
   pretrain: /pretrain/INN_ckpt.pth
   pretrain_model_G: /pretrain/INN_ckpt.pth
