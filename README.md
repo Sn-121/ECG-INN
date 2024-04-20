@@ -14,14 +14,6 @@ Change the weight path for color and edge network in "/models/archs/Enhance_arch
 Change the weight path for main network(INN) in "/options/test_Enhance_LOL.yml" ， it also contains paths to the images needed for testing.
 Run 'eval.py' for testing.
 
-### 4.Train Models
-Change the path of "create_txt.py" and run it to create the list of datasets.
-Change the weight path for main network(INN) in "/options/train_Enhance_LOL.yml"
-Run 'train.py' for training or run 'eval.py' for testing.
-
-```
-python train.py
-```
 ```
 python eval.py
 ```
