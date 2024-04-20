@@ -32,7 +32,6 @@ def Canny(self, index):
     inputs = torch.from_numpy(np.ascontiguousarray(np.transpose(inputs, (2, 0, 1)))).float()
     targets = torch.from_numpy(np.ascontiguousarray(np.transpose(target, (2, 0, 1)))).float()
 
-    # 输入，canny图
     return inputs, targets
 def is_image_file(filename):
     return any(filename.endswith(extension) for extension in [".png", ".jpg", ".jpeg"])
