@@ -64,7 +64,7 @@ class CoupleLayer(nn.Module):
             else:
                 r2 = self.s2(L, None)
 
-            # 产生s2=fai  t2=rou
+            # s2=fai  t2=rou
             s2, t2 = r2[:, :self.split_len1], r2[:, self.split_len1:]
             y1 = self.e(s2) * R + t2
 
