@@ -9,10 +9,10 @@ timm  0.6.12
 
 ### 1. Datasets
 
-Please download these three low-light enhancement datasets : 
-LOL: [https://daooshee.github.io/BMVC2018website/], 
-HUAWEI: [https://github.com/JianghaiSCU/R2RNet], 
-LOLv2: [https://github.com/flyywh/CVPR-2020-Semi-Low-Light].
+Please download these three low-light enhancement datasets :  
+LOL [https://daooshee.github.io/BMVC2018website/], 
+HUAWEI [https://github.com/JianghaiSCU/R2RNet], 
+LOLv2 [https://github.com/flyywh/CVPR-2020-Semi-Low-Light].
 
 ### 2. Pretrained Models
 
