@@ -7,8 +7,6 @@ torchvision  0.10.1+cu111
 numpy  1.18.1
 timm  0.6.12
 
-## Preparation
-
 ### 1. Datasets
 
 Please download these three low-light enhancement datasets :
