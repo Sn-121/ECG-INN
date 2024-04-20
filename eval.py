@@ -7,7 +7,7 @@ import sys
 
 import torchvision.utils
 
-sys.path.append('D:/Github-Code/MainNet')
+sys.path.append('D:/ECG_INN')
 
 
 import torch
@@ -22,7 +22,7 @@ from models import create_model
 def main():
     #### options
     parser = argparse.ArgumentParser()
-    parser.add_argument('--opt', type=str, default='D:/Github-Code/MainNet/options/test/test_enhance_LOL.yml',
+    parser.add_argument('--opt', type=str, default='D:/ECG_INN/options/test/test_enhance_LOL.yml',
                         help='Path to option YAML file.')
     parser.add_argument('--launcher', choices=['none', 'pytorch'], default='pytorch', help='job launcher')
     parser.add_argument('--local_rank', type=int, default=0)
