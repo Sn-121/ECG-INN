@@ -30,7 +30,7 @@ class Inference_low(nn.Module):
         super().__init__()
         # loading decomposition model
         self.model_Decom_low = Decom()
-        checkpoint_Decom_low = torch.load('D:/Github-Code/BMNet-main/MainNet/pretrain/init_low.pth')
+        checkpoint_Decom_low = torch.load('/pretrain/decom_ckpt.pth')
         self.model_Decom_low.load_state_dict(checkpoint_Decom_low['state_dict']['model_R'])
         # loading R; old_model_opts; and L model
     def forward(self, input_low_img):
@@ -38,16 +38,6 @@ class Inference_low(nn.Module):
             RL,LL = self.model_Decom_low(input_low_img)
         return  RL,LL
 
-class Inference_high(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.model_Decom_high = Decom()
-        checkpoint_Decom_high = torch.load('D:/Github-Code/BMNet-main/MainNet/pretrain/init_high.pth')
-        self.model_Decom_high.load_state_dict(checkpoint_Decom_high['state_dict']['model_R'])
-    def forward(self, input_high_img):
-        with torch.no_grad():
-            RH, LH = self.model_Decom_high(input_high_img)
-        return RH,LH
 if __name__ == '__main__':
     x=torch.randn(1,3,256,256)
     y=torch.randn(1,3,256,256)
