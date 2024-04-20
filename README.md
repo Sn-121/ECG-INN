@@ -21,7 +21,7 @@ Download pretrained model weights from [https://drive.google.com/drive/folders/1
 ### 3. Test Models
 Change the weight path for decom network in "/models/condition/condition_retinex.py",  
 Change the weight path for color and edge network in "/models/archs/Enhance_arch.py",  
-Change the weight path for main network(INN) in "/options/test_Enhance_LOL.yml" ， it also contains paths to the images needed for testing.  
+Change the weight path for main network(INN) in "/options/test_Enhance_LOL.yml"，it also contains paths to the images needed for testing.  
 At last, run "eval.py" for testing.
 
 ```
