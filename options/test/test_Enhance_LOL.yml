@@ -30,8 +30,8 @@ path:
 #  pretrain:  D:/Github-Code/BMNet-main/MainNet/experiments/wobackward_archived_240311-130028/models/0_bestpsnravg.pth
 #  pretrain_model_G: D:/Github-Code/BMNet-main/MainNet/experiments/wobackward_archived_240311-130028/models/0_bestpsnravg.pth
 
-  pretrain: D:/Github-Code/BMNet-main/MainNet/experiments/wobackward_archived_240313-125000/models/0_bestpsnravg.pth
-  pretrain_model_G: D:/Github-Code/BMNet-main/MainNet/experiments/wobackward_archived_240313-125000/models/0_bestpsnravg.pth
+  pretrain: /pretrain/INN_ckpt.pth
+  pretrain_model_G: /pretrain/INN_ckpt.pth
 
   strict_load: true
   resume_state: ~
